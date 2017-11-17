@@ -25,8 +25,8 @@ Add the following code to your activity XML file:
 
 And the following code in the Activity class
 
-    TensorFlowCamera tfCamera = (TensorFlowCamera) findViewById(R.id.cameraView);
 	// Setup Tensorflow Camera
+    TensorFlowCamera tfCamera = (TensorFlowCamera) findViewById(R.id.cameraView);
     tfCamera.setLabelsFile("imagenet_comp_graph_label_strings.txt"); // Label file in assets folder
     tfCamera.setModelFile("file:///android_asset/tensorflow_inception_graph.pb"); // Pb file in assets folder
     tfCamera.start(); // Start the camera
