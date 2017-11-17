@@ -10,9 +10,7 @@ I would like to thank [@shawngit](https://github.com/androidthings/sample-tensor
 ----------
 Example images
 -------------
-<img src="https://i.imgur.com/HsTjkfY.jpg" width="49%">
-<img src="https://i.imgur.com/5oX3Kop.jpg" width="49%">
-<img src="https://i.imgur.com/P3Oe7Fc.jpg" width="49%">
+<img src="https://i.imgur.com/HsTjkfY.jpg" width="25%"><img src="https://i.imgur.com/5oX3Kop.jpg" width="25%"><img src="https://i.imgur.com/P3Oe7Fc.jpg" width="25%">
 
 
 Usage
