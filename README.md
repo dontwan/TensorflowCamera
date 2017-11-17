@@ -34,7 +34,7 @@ And the following code in the Activity class
 ----------
 Assets files
 -------------
-Download the following [file](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip)
+Download the following [file](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip).
 Extract the zip and place the two files in the: **app/main/assets**
 This are the model and label file.
 
