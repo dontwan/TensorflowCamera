@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="dontwan.example.MainActivity">
+
+    <dontwan.tensorflowcamera.TensorFlowCamera
+        android:id="@+id/cameraView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvLive"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="LIVE DETECT" />
+
+        <Switch
+            android:id="@+id/sLive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tvLive"
+            android:checked="true"
+            tools:checked="true" />
+
+        <TextView
+            android:id="@+id/tvAccuracy"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/tvLive"
+            android:gravity="center"
+            android:text="ACCURACY" />
+
+        <SeekBar
+            android:id="@+id/sbAccuracy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvAccuracy"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvLive"
+            android:layout_toEndOf="@+id/tvAccuracy"
+            android:max="100"
+            android:progress="36" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnTakePicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvResult"
+            android:layout_below="@id/tvAccuracy"
+            android:text="Take picture"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>
