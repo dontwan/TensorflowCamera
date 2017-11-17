@@ -17,14 +17,14 @@ Usage
 -------------
 
 Add the following code to your activity XML file:
-```xml
+
     <dontwan.tensorflowcamera.TensorFlowCamera
         android:id="@+id/cameraView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
 And the following code in the Activity class
-```java
+
     TensorFlowCamera tfCamera = (TensorFlowCamera) findViewById(R.id.cameraView);
 	// Setup Tensorflow Camera
     tfCamera.setLabelsFile("imagenet_comp_graph_label_strings.txt"); // Label file in assets folder
@@ -42,7 +42,7 @@ This are the model and label file.
  - tensorflow_inception_graph.pb
 
 *If you gonna use other modal or label file please add the following code in the activity class:
-```java
+
     tfCamera.setLabelsFile("imagenet_comp_graph_label_strings.txt"); // Label file in assets folder
     tfCamera.setModelFile("file:///android_asset/tensorflow_inception_graph.pb"); // Pb file in assets folder
 
@@ -51,7 +51,7 @@ This are the model and label file.
 Callbacks
 ----------
 **OnCameraStarted**
-```java
+
     tfCamera.setOnCameraStarted(new OnCameraStarted() {
             @Override
             public void onStarted() {
@@ -60,7 +60,7 @@ Callbacks
         });
 
 **OnNoPermissions**
-```java
+
     tfCamera.setOnNoPermissions(new OnNoPermissions() {
             @Override
             public void onNoPermissions() {
@@ -69,7 +69,7 @@ Callbacks
         });
 
 **OnObjectDetected**
-```java
+
     tfCamera.setOnObjectDetected(new OnObjectDetected() {
             @Override
             public void onDetected(Bitmap frame, List<Classifier.Recognition> objects) {
