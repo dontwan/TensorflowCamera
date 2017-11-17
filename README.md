@@ -79,7 +79,7 @@ Callbacks
 
 ----------
 
-Method
+Methods
 ---------- 
 
 Method     | Description
