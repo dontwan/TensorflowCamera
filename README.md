@@ -1,7 +1,5 @@
-Welcome to StackEdit!
+Welcome to TensorflowCamera!
 ===================
-
-
 Hey! This is my first library for TensorFlow, I hope you like it.
 This library is based on Camera, TextureView and Tensorflow.
 
