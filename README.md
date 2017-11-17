@@ -1,7 +1,8 @@
 Welcome to TensorflowCamera!
 ===================
 Hey! This is my first library for TensorFlow, I hope you like it.
-This library is based on Camera, TextureView and Tensorflow.
+This library is based on Camera, TextureView and Tensorflow. 
+**(Min SDK is 21)**
 
 I would like to thank [@shawngit](https://github.com/androidthings/sample-tensorflow-imageclassifier) for his code where this library is based on.
 
